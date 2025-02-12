@@ -1,0 +1,504 @@
+Watching for file changes with StatReloader
+/home/digitalranjan/workspace/django_odoo_contact/django_odoo_contact/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Sending data to Odoo: {"jsonrpc": "2.0", "params": {"name": "Odoo Shaper", "email": "admin@odooshaper.com", "phone": "1234", "message": "hii"}}
+Unexpected Error: name 'ODOO_API_URL' is not defined
+Watching for file changes with StatReloader
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Odoo Shaper", "email": "admin@odooshaper.com", "phone": "1234", "message": "hii"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 2, "message": "Record created successfully"}}
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Watching for file changes with StatReloader
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+Watching for file changes with StatReloader
+Not Found: /
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+/home/digitalranjan/workspace/django_odoo_contact/django_odoo_contact/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /contact/
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/base.py", line 966, in render_annotated
+    return self.render(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 132, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 129, in get_parent
+    return self.find_template(parent, context)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader_tags.py", line 107, in find_template
+    template, origin = context.template.engine.find_template(
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/engine.py", line 161, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/digitalranjan/workspace/django_odoo_contact/contact/views.py", line 80, in contact_view
+    return render(request, "contact/contact_form.html", {"form": form})
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/shortcuts.py", line 24, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/digitalranjan/workspace/django_odoo_contact/venv/lib/python3.8/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: base.html
+/home/digitalranjan/workspace/django_odoo_contact/django_odoo_contact/settings.py changed, reloading.
+Watching for file changes with StatReloader
+Watching for file changes with StatReloader
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "ARPL odoo", "email": "ranjanjmt15@gmail.com", "phone": "9874588966", "message": "Hello"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 3, "message": "Record created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "ARPL odoo", "email": "ranjanjmt15@gmail.com", "phone": "9874588966", "message": "Hello"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 4, "message": "Record created successfully"}}
+Not Found: /
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ranjan FLC test", "email": "ranajn@flc.com", "phone": "9123278966", "message": "This is Code Form Django to odoo Submision"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 5, "message": "Record created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Rnajan", "email": "ranajn@odooshaper.com", "phone": "9123278966", "message": "This is code form Django api to Odoo Backend"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 6, "message": "Record created successfully"}}
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "itis", "email": "odooshaper@gmail.com", "phone": "9123278966", "message": "dd"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 110
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 7, "message": "Record created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "itis", "email": "odooshaper@gmail.com", "phone": "9123278966", "message": "dd"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 133
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 8, "lead_id": 2, "message": "Record and lead created successfully"}}
+Not Found: /
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Juhi", "email": "juhi@gmail.com", "phone": "9874858966", "message": "tets"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 262
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": false, "error": "invalid input syntax for type integer: \"Juhi\"\nLINE 1: ...p>', 'juhi@gmail.com', NULL, 0, 'Lead from Juhi', 'Juhi', 'J...\n                                                             ^\n"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Juhi", "email": "juhi@gmail.com", "phone": "9874858966", "message": "tets"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 134
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 10, "lead_id": 3, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "sss", "email": "ss@gmail.com", "phone": "ss", "message": "ssss"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 134
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 11, "lead_id": 4, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ajay", "email": "ajay@gmail.com", "phone": "123456789", "message": "jjjj"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 98
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": false, "error": "name 'res' is not defined"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Vijay", "email": "vijay@gmail.com", "phone": "123456789", "message": "Tets Notofication"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 98
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": false, "error": "name 'res' is not defined"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Vijay", "email": "vijay@gmail.com", "phone": "123456789", "message": "Tets Notofication"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 134
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 14, "lead_id": 7, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "jjj", "email": "jjj@gmail.com", "phone": "789996655", "message": "55555"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 134
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 15, "lead_id": 8, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Anaay", "email": "anay@gmail.com", "phone": "987458899", "message": "4455ddd"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 134
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 16, "lead_id": 9, "message": "Record and lead created successfully"}}
+Watching for file changes with StatReloader
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Puja", "email": "puja@gmail.com", "phone": "98748596", "message": "hello ist   dd"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 17, "lead_id": 10, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "itisddd", "email": "eldho@policyscanner.ca", "phone": "9123278966", "message": "dddd"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 18, "lead_id": 11, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "itis", "email": "eldho@policyscanner.ca", "phone": "eee", "message": "eee"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 19, "lead_id": 12, "message": "Record and lead created successfully"}}
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Eldho", "email": "eldho@policyscanner.ca", "phone": "9123278966", "message": "This lead ofr odoo crm"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 20, "lead_id": 13, "message": "Record and lead created successfully"}}
+Watching for file changes with StatReloader
+Not Found: /
+Not Found: /favicon.ico
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ranjan", "email": "ranajn@odooshaper.com", "phone": "9123278966", "message": "hello test email"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 21, "lead_id": 14, "message": "Record and lead created successfully"}}
+Not Found: /
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ajay", "email": "ajay@odooshaper.com", "phone": "1234", "message": "Hello thsi is Ranjana Behalf Of ajay Bhi"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 22, "lead_id": 15, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Juhi", "email": "juhi@gmail.com", "phone": "9123278966", "message": "Hi I am lloking For  Visa Support"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 140
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": false, "error": "Failed to render inline_template template: {{ object.email_from }})"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Vijay", "email": "vijay@gmail.com", "phone": "9123278966", "message": "Hello   Looking For Visa"}}
+Starting new HTTP connection (1): localhost:8017
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Vijay", "email": "vijay@gmail.com", "phone": "9123278966", "message": "Hello   Looking For Visa"}}
+Starting new HTTP connection (1): localhost:8017
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ranjan", "email": "eldho@policyscanner.ca", "phone": "123456789", "message": "heloooo"}}
+Starting new HTTP connection (1): localhost:8017
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ranjan", "email": "eldho@policyscanner.ca", "phone": "123456789", "message": "heloooo"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 28, "lead_id": 16, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Ranjan Kumar", "email": "ranjan@flc.com", "phone": "+91 91232-78966", "message": "i am looking for Visa Support"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 29, "lead_id": 17, "message": "Record and lead created successfully"}}
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Vijay", "email": "vijay@odooshaper.com", "phone": "9123278966", "message": "i am looking for student visa Apply"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 30, "lead_id": 19, "message": "Record and lead created successfully"}}
+Watching for file changes with StatReloader
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Prince", "email": "prince@gmail.com", "phone": "9123278966", "message": "This is tetsing api"}}
+Starting new HTTP connection (1): localhost:8017
+Sending data to Odoo: {"jsonrpc": "2.0", "method": "call", "params": {"name": "Prince", "email": "prince@gmail.com", "phone": "9123278966", "message": "This is tetsing api"}}
+Starting new HTTP connection (1): localhost:8017
+http://localhost:8017 "POST /flc_contact_form/submit HTTP/10" 200 135
+Odoo Response Status: 200
+Odoo Response Content: {"jsonrpc": "2.0", "id": null, "result": {"success": true, "id": 31, "lead_id": 20, "message": "Record and lead created successfully"}}
+Not Found: /
